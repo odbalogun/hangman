@@ -1,19 +1,20 @@
 {
     "modes": {
         "easy": {
-            "guesses": 10,
+            "wrong_guesses": 10,
             "length": 5,
             "words": ["guess", "tired", "freed", "grown", "icons", "throw", "zebra"]
         },
         "normal": {
-            "guesses": 7,
+            "wrong_guesses": 7,
             "length": 6,
             "words": ["friend", "ground", "purple", "broken", "turtle", "energy", "moment"]
         },
         "hard": {
-            "guesses": 5,
+            "wrong_guesses": 5,
             "length": 8,
             "words": ["eggheads", "thursday", "envelope", "abdicate", "daughter", "remember", "squirrel"]
         }
-    }
+    },
+    "words-api": "https://wordsapiv1.p.mashape.com/words/"
 }
