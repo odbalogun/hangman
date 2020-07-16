@@ -1,21 +1,16 @@
-# use a config file
+# README.MD
 
-# get user's name
+Hangman is a popular game played by millions across the world. This repository contains my attempt to recreate it within Python.
 
-# select from three game difficulties: easy, normal, hard
+## Installation
+Best practice is to create a Python3 virtual environment and then install the dependencies in the requirements.txt file via Pip.
 
-# fetch random word from the api using the appropriate word count. If unreachable, select random from config
+```bash
+virtualenv -p python3 venv
+pip install -r requirements.txt
+```
 
-# use loop to run game
+## Configuration
+In order for the application to run properly and connect to the word generator API, an API key should be created on [RapidAPI](https://rapidapi.com/). This API key should then be saved as an environment variables with the name 'RAPID_API_KEY'.
 
-# write tests for 
-    - success
-    - failure
-    - unavailable api endpoint
-    - api endpoint not returning any words
-    - numbers or symbols inputted
-
-# store the following in config file:
-    - no of letters in easy, normal & hard words
-    - list of 7 words for each difficulty
-    - api url for retrieving words
+Sadly, the external api seems to suffer a lot of downtime. To combat this, the application includes a config.json file from which words will be loaded whenever the api is unavailable.
